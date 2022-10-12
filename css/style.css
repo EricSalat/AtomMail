@@ -1,0 +1,361 @@
+/*Variables and configuration*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+:root {
+    --mainFont:'Space Grotesk', sans-serif;
+    --mainColor: #6e24ff;
+    --secondaryColor: #342c7c;
+    --auxiliarColor: #388452;
+    --textColor: #211222;
+    --backgroundColor: #f7f5ff;
+    --heroColor: #f9f9f9;
+    
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    align-items: baseline;
+}
+
+header .logo {
+    font-family: var(--mainFont);
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 700;
+    align-items: baseline;
+}
+header div img {
+    display: none;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-family: var(--mainFont);
+    font-weight: 600;
+    color: var(--textColor);
+    margin-right: 30px;
+    margin-left: 30px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 600;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+header button {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* header button:last-of-type{
+
+} */
+
+/*BODY*/
+
+section {
+    padding-bottom: 5rem;
+}
+
+h1, h2, h3, p {
+    font-family: var(--mainFont);
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: var(--mainFont);
+    font-size: 1.1rem;
+}
+
+li {
+    font-family: var(--mainFont);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+b{
+    color: #6e24ff;
+}
+
+input#email {
+    font-family: var(--mainFont);
+    padding: 10px 15px 10px 15px;
+}
+
+.highlight-text {
+ font-size: 20px;
+ /* font-weight: 300; */
+ color: grey;
+}
+
+.header-container, .body-container, .footer-container { 
+	/* max-width: 1080px;  */
+    max-width: 80%;
+    margin: 0 auto; 
+}
+
+.main-button{
+    padding: 5px 10px 5px 10px;
+    border-color: #6e24ff;
+    border-style: solid;
+    font-family: var(--mainFont);
+    font-weight: 600;
+    color: #fff;
+    background-color: #6e24ff;
+}
+
+.main-button:hover {
+    background-color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+    color: #fff;
+}
+form .main-button:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+.secondary-button{
+    font-family: var(--mainFont);
+    font-weight: 600;
+    background-color: transparent;
+    border-style: none;
+}
+
+.secondary-button:hover {
+    color: var(--mainColor);
+}
+
+.terciary-button {
+    color: var(--mainColor);
+    background-color: transparent;
+    padding: 8px 30px 8px 30px
+}
+
+.terciary-button:hover {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+form .main-button {
+    background-color: #000;
+    border-color: #000;
+    padding: 10px 15px 10px 15px;
+}
+
+footer .main-button {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+    padding: 6px 15px 5px 15px;
+}
+
+footer .main-button:hover {
+    background-color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
+}
+
+
+.imagen-maquetacion {
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: black;
+    height: 500px;
+}
+
+.my-cards {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+    border-radius: 3%;
+    
+}
+
+.my-cards:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+div .mycards > .bi {
+    margin-bottom: 50px;
+}
+
+.hightlighed-links {
+    color: var(--mainColor);
+    font-weight: 700;
+    text-decoration:underline
+}
+
+
+.hightlighed-links:hover {
+    color: var(--secondaryColor);
+}
+
+/* li:before {
+    content: "\F797";
+    margin-right: 5px;
+} */
+
+/*Això de dalt noe stà funcionant...*/
+
+.circle-number {
+    background-color: var(--mainColor);
+    display: inline;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    height: 50px;
+    width: 50px;
+}
+
+.steps-card {
+    height: auto;
+    width: 300px;
+    margin: 10px;
+    padding: 50px 5px 50px 5px;
+}
+
+.steps-card h3 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+
+.carousel-control-next-icon,.carousel-control-prev-icon, .carrousel-control-prev, .carrousel-control-next{
+    color: #000 !important;
+    font-size: 0.5em;
+    background-color: var(--mainColor);
+    opacity: 1;
+}
+
+.testimonial-user {
+    border-radius: 50%;
+    border: 2px solid var(--secondaryColor);
+}
+
+/*FOOTER*/
+footer {
+    height: 350px;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+footer p {
+    color: #404040;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 8px;
+    color: #404040;
+}
+
+footer li a:hover {
+    color: var(--mainColor);
+}
+
+footer li:first-of-type {
+    font-size: 1.3rem;
+    /* line-height: 2.5; */
+}
+
+.social-media-icons {
+    color: #3cb265;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 14px;
+}
+
+/*TABLET VERSION*/
+@media (max-width: 811px) {
+    header nav, header button {
+        display:none;
+    }
+}
+
+/*MOBILE VERSION*/
+@media (max-width: 576px) {
+    h1 {
+    font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+    header {
+        background-color: #f9f9f9;
+        padding: 0 3rem 0 3rem;
+    }
+    header .logo {
+    font-size: 1rem;
+    }
+    header nav, header button {
+        display:none;
+    }
+
+    .steps-card {
+        flex-direction: column;
+    }
+
+    footer {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    height: fit-content;
+    }
+
+    footer div div {
+    flex-direction: column;
+
+    }
+   
+    footer ul, footer li  {
+        font-size: 0.8rem;
+    }
+
+    footer li:first-of-type, footer p {
+        font-size: 1rem;
+    }
+
+
+
+    footer ul {
+        padding: 0;
+        margin-top: 30px;
+    }
+    footer div:last-of-type {
+        margin-top: 20px;
+    }
+}
