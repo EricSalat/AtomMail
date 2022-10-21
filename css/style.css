@@ -204,7 +204,7 @@ footer .main-button:hover {
     
 }
 
-.my-cards:hover {
+.my-cards:hover, .my-cards-selected {
     background-color: #000;
     color: #fff;
 }
