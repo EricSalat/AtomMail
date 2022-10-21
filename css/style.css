@@ -10,7 +10,9 @@
     --heroColor: #f9f9f9;
     
 }
-
+.inactive {
+    display: none;
+}
 /* HEADER */
 
 header {
